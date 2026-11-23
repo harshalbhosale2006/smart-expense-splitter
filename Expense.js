@@ -1,24 +1,29 @@
 
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const expenseSchema = new mongoose.Schema({
+const expenseSchema = new mongoose.Schema(
+  {
     title: {
-        type: String,
-        required: true,
-        trim: true
+      type: String,
+      required: true,
+      trim: true
     },
     amount: {
-        type: Number,
-        required: true,
-        min: 0.01
+      type: Number,
+      required: true,
+      min: 0.01
     },
     paidBy: {
-        type: String,
-        required: true,
-        trim: true
+      type: String,
+      required: true,
+      trim: true
     }
-}, {
+  },
+  {
     timestamps: true
-});
+  }
+);
 
-module.exports = mongoose.model("Expense", expenseSchema);
+const Expense = mongoose.model("Expense", expenseSchema);
+
+export default Expense;
