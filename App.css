@@ -1,0 +1,83 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #252b3b;
+}
+
+.app header {
+  background: #263b80;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+.summary, .form-card, .expense-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.summary {
+  background: #e8efff;
+}
+
+.summary h1 {
+  color: #263b80;
+  font-size: 36px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #263b80;
+  color: white;
+  cursor: pointer;
+}
+
+.expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.expense p {
+  color: #777;
+  margin-bottom: 0;
+}
+
+.delete {
+  display: block;
+  margin-top: 8px;
+  background: #d94343;
+}
